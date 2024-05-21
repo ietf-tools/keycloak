@@ -15,4 +15,6 @@ ENV KC_METRICS_ENABLED="true"
 ENV KC_HTTP_ENABLED="true"
 ENV KC_PROXY_HEADERS="xforwarded"
 
+COPY . /opt/keycloak/
+
 CMD ["start", "--optimized"]
