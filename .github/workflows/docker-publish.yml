@@ -40,7 +40,7 @@ jobs:
         uses: snok/container-retention-policy@v2
         with:
           image-names: keycloak
-          cut-off: One month ago UTC
+          cut-off: One week ago UTC
           keep-at-least: 3
           account-type: org
           org-name: ietf-tools

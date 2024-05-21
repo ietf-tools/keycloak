@@ -17,4 +17,4 @@ ENV KC_PROXY_HEADERS="xforwarded"
 
 COPY . /opt/keycloak/
 
-CMD ["start", "--optimized"]
+CMD ["start", "--optimized", "--verbose"]
