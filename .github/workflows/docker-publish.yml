@@ -32,7 +32,7 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: ghcr.io/ietf-tools/keycloak:${{ github.run_number }}, ghcr.io/ietf-tools/keycloak:latest
+          tags: ghcr.io/ietf-tools/keycloak:24.0.3-ietf.${{ github.run_number }}, ghcr.io/ietf-tools/keycloak:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
