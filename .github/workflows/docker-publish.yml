@@ -36,13 +36,13 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
-      - name: Delete old images
-        uses: snok/container-retention-policy@v2
-        with:
-          image-names: keycloak
-          cut-off: One week ago UTC
-          keep-at-least: 3
-          account-type: org
-          org-name: ietf-tools
-          token: ${{ secrets.GITHUB_TOKEN }}
-          token-type: github-token
+      # - name: Delete old images
+      #   uses: snok/container-retention-policy@v2
+      #   with:
+      #     image-names: keycloak
+      #     cut-off: One week ago UTC
+      #     keep-at-least: 3
+      #     account-type: org
+      #     org-name: ietf-tools
+      #     token: ${{ secrets.GITHUB_TOKEN }}
+      #     token-type: github-token
